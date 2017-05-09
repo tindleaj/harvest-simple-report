@@ -1,0 +1,14 @@
+{
+  "name": "harvest-report",
+  "version": "0.1.0",
+  "description": "generate simple report from harvest",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin Tindle",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1"
+  }
+}
