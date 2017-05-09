@@ -7,6 +7,7 @@ var start = '20170301';
 var end = '20170508';
 var url = '/projects/' + projectID + '/entries?from=' + start + '&to=' + end;
 
+// refactor this
 axios.get(url, {
 	baseURL: BASE,
 	headers: {
