@@ -4,12 +4,11 @@ const fs = require('fs');
 const BASE = 'http://austintindle.harvestapp.com/';
 var generalID = '13718240'; // Seal redesign: 13871903; General: 13718240;
 var sealID = '13871903'; // Seal redesign: 13871903; General: 13718240;
-var start = '20170505';
-var end = '20170518';
+var start = '20170602';
+var end = '20170615';
 var url1 = '/projects/' + generalID + '/entries?from=' + start + '&to=' + end;
 var url2 = '/projects/' + sealID + '/entries?from=' + start + '&to=' + end;
 
-// refactor this
 function printReport(url) {
 	axios.get(url, {
 		baseURL: BASE,
@@ -25,7 +24,7 @@ function printReport(url) {
 
 			getTaskByID(entry.day_entry.task_id).then((res) => {
 				console.log(`${spent_at}: [hrs: ${hours}] [${res.task.name}] - ${entry.day_entry.notes}`);
-			})
+			});
 		});
 	});
 }
