@@ -44,8 +44,7 @@ function getTaskByID(id) {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
-          Authorization:
-            "Basic dGluZGxlYWpAZ21haWwuY29tOkZzazUtIXcvUDRNaypGPW4zQQ=="
+          Authorization: auth.key
         }
       })
       .then(res => {
@@ -87,4 +86,4 @@ function getAllTasks() {
   });
 }
 
-printReport(url1);
+printReport(url2);
